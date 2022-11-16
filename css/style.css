@@ -16,9 +16,12 @@ min-height: 530px;
 overflow: hidden;
 border-radius: 10px;
 }
+.answer {
+display: none;
+}
 .active .answer {
-  display: block;
-  }
+display: block;
+}
 .pattern img {
 width: 100%;
 object-fit: cover;
@@ -73,4 +76,10 @@ font-size: 28px;
 font-weight: 600;
 color: #252525;
 line-height: 0;
+}
+.answer p {
+font-family: arial;
+font-size: 14px;
+line-height: 22px;
+color: #df5c34;
 }
