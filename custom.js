@@ -37,14 +37,14 @@ for (i = 0; i < acc.length; i++) {
   });
 }*/
 
-const questions = document.querySelectorAll('.faq-question');
+const questions = document.querySelectorAll('.faq-box-question');
 questions.forEach((question) => question.addEventListener('click', () => {
-    question.parentNode.classlist.add('faq-accordion')
-    if (question.parentNode.classlist.contains('active')) {
-        question.parentNode.classlist.toggle('active');
+    question.classList.add('faq-accordion')
+    if (question.classList.contains('active')) {
+        question.classList.toggle('active');
     } else {
-        questions.forEach((question) => question.parentNode.classlist.remove('active'))
-        question.parentNode.classlist.add('active');
+        questions.forEach((question) => question.classList.remove('active'))
+        question.classList.add('active');
     }
 }));
 

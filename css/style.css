@@ -16,9 +16,9 @@ min-height: 530px;
 overflow: hidden;
 border-radius: 10px;
 }
-.answer {
-display: none;
-}
+.active .answer {
+  display: block;
+  }
 .pattern img {
 width: 100%;
 object-fit: cover;
